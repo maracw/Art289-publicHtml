@@ -1,0 +1,51 @@
+/* General Layout (Non-typographic) Style Rules */
+body {
+	margin: 40px 60px;
+}
+body > ul {
+	margin-bottom: .5em;
+}
+ul li {
+	margin: .15em 0;
+}
+code {
+	background-color: #eee;
+}
+footer {
+	margin-top: 80px;
+}
+/* adobe typekit */
+h1{
+	font-family: "tarif", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 6em;
+	text-align: right;
+	
+}
+h1 span {
+	display: block;
+}
+h1 >span:first-child{
+	font-weight: 100;
+	font-style: italic;
+}
+h1 > span:nth-child(2){
+	color:gold;
+	display: inline;
+}
+h1 > span:nth-child(3){
+	display: inline;
+}
+h1>span:nth-child(4){
+	color:gray;
+	font-size: larger;
+	letter-spacing: .3em;
+	max-width: 66%vw;
+	}
+	h1 >span:last-child{
+		font-size: smaller;
+		font-weight: 900;
+	}
+
+/* Typographic Styles */

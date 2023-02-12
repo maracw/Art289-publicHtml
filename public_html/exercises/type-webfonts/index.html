@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Styling Type and Using Webfonts</title>
+	<link rel="stylesheet" type="text/css" href="type-styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zhc5ehd.css">
+</head>
+<body>
+	<h1><span>Styling Type</span> <span>and</span> <span>Using</span> <span>Webfonts</span> <span>In Your Pages</span></h1>
+	<p>Most designers have an appreciation for well-designed typfaces and want to utilize them a design element in their work. Thanks to CSS and webfonts, we have many options now when it comes to bringing type into web pages.</p>
+	<p>This page is intended for use in practicing applying CSS to style type. A basic stylesheet has been set up and organized as a starting point and the content of this page contains some notes about various typographic CSS properties.</p>
+	<p>Have fun with this and use it to help become familiar with type-related CSS.</p>
+	<h2>CSS Type Styling Properties</h2>
+	<p>There are several CSS properties relating to typographic styles that most designers are familiar with from working in page layout and design software.</p>
+	<p>Here are the properties we can use:</p>
+	<h3>Basic Type Formatting</h3>
+	<ul>
+		<li><code><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#color" target="_blank">color</a></code> sets the color of the foreground content of the selected elements (which is usually the text, but can also include a couple of other things, such as an underline or overline placed on text using the text-decoration property).</li>
+		<li><code><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#font_size" target="_blank">font-size</a></code> can take values measured in most of the available CSS length and size units, however the most common units you'll use to size text are <code>px</code> (pixels), <code>em</code>, and <code>rem</code>.</li>
+		<li><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style" target="_blank">font-style</a></code> is used to turn italic text on and off. Possible values are <code>normal</code> (no italics), <code>italic</code> (uses italic version of the font, if available), and <code>oblique</code> (uses a simulated </li>
+		<li><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" target="_blank">font-weight</a></code> sets the weight of text within an element. Can use keyword values (lighter, normal, bold, bolder) or numeric values relating to weight variants in a font.</li>
+		<li><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform" target="_blank">text-transform</a></code> Allows you to set your font to be transformed. Values include:
+			<ul>
+				<li><code>none</code>: Prevents any transformation.</li>
+				<li><code>uppercase</code>: Transforms ALL TEXT TO CAPITALS.</li>
+				<li><code>lowercase</code>: Transforms all text to lower case.</li>
+				<li><code>capitalize</code>: Transforms all words to Have The First Letter Capitalized.</li>
+				<li><code>full-width</code>: Transforms all glyphs to be written inside a fixed-width square, similar to a monospace font, allowing aligning of e.g. Latin characters along with Asian language glyphs (like Chinese, Japanese, Korean).</li>
+			</ul>
+		</li>
+		<li><code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">text-decoration</a></code>: Sets/unsets text decorations on fonts (you'll mainly use this to unset the default underline on links when styling them.) Available values are:
+			<ul>
+				<li><code>none</code>: Unsets any text decorations already present.</li>
+				<li><code>underline</code>: Underlines the text.</li>
+				<li><code>overline</code>: Gives the text an overline.</li>
+				<li><code>line-through</code>: Puts a strikethrough over the text.			</li>
+			</ul>
+		</li>
+	</ul>
+	<h3>Typographic Alignment and Spacing</h3>
+	<h4>Text Align</h4>
+	<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align"><code>text-align</code></a> property is used to control how text is aligned within its containing content box. The available values are as follows, and work in pretty much the same way as they do in a regular word processor application:</p>
+	<ul>
+	 <li><code>left</code>: Left-justifies the text.</li>
+	 <li><code>right</code>: Right-justifies the text.</li>
+	 <li><code>center</code>: Centers the text.</li>
+	 <li><code>justify</code>: Makes the text spread out, varying the gaps in between the words so that all lines of text are the same width. You need to use this carefully — it can look terrible, especially when applied to a paragraph with lots of long words in it. If you are going to use this, you should also think about using something else along with it, such as <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"><code>hyphens</code></a>, to break some of the longer words across lines.</li>
+	</ul>
+	<h4>Line Height</h4>
+	<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height"><code>line-height</code></a> property sets the height of each line of text — this can take most <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#length_and_size">length and size units</a>, but can also take a unitless value, which acts as a multiplier and is generally considered the best option — the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"><code>font-size</code></a> is multiplied to get the <code>line-height</code>. Body text generally looks nicer and is easier to read when the lines are spaced apart; the recommended line height is around 1.5 – 2 (double spaced.)</p>
+	<h4>Letter and Word Spacing</h4>
+	<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing"><code>letter-spacing</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing"><code>word-spacing</code></a> properties allow you to set the spacing between letters and words in your text. You won't use these very often, but might find a use for them to get a certain look, or to improve the legibility of a particularly dense font. They can take most <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#length_and_size">length and size units</a>.</p>
+
+	<aside>
+		<h2>Additional Information</h2>
+		<p>More information about these CSS properties and others related to type styling can be found at the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">MDN page on Fundamental Text and Fond Styling</a>.</p>
+	</aside>
+
+	<footer>
+		<p><small>Some content in this page is originally from the Mozilla Developer Network (MDN) and is used under a Creative Commons Attribution-ShareAlike license.</small></p>
+	</footer>
+</body>
+</html>
