@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style-landingpage.css">
     <title>Mara Williams Art 289</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <h1>Soft Werewolf Maximalism</h1>
+    </header>
+    <div class="flex-container">
         <nav>
-            <ul>
-                <li>Projects
-                    <ul>
-                        <li><a href="p1/index.html">Project 1: Resume</a></li>
-                        <li><a href="p2/index.html">Project 2: in progress</a></li>
-                        <li><a href="#">Project 3: Coming Soon</a></li>
+            <ul class="dropdown">
+                <li class="dropdown-item"><span>Projects</span>
+                    <ul class="dropdown-list">
+                        <li><a href="p1/index.html">Project One: Semantic HTML</a></li>
+                        <li><a href="p2/index.html">Project Two: Basic Layout</a></li>
+                        <li><a href="#"><em>Coming Soon: </em>Project Three: Portfolio Website</a></li>
                     </ul>
                 </li>
-                <li>
-                    Chapter Work
-                    <ul>
+                <li class="dropdown-item"><span>Textbook Chapter Work</span>
+                    <ul class="dropdown-list">
                         <li><a href="chapters/ch04/bistro/index.html">Chapter 4</a></li>
-                        <li><a href="chapters/ch05">Chapter 5 Directory</a></li>
-                        <li><a href="chapters/ch06">Chapter 6 Directory</a></li>
-                        <li><a href="chapters/ch07">Chapter 7 Directory</a></li>
+                        <li><a href="chapters/ch05">Chapter 5</a></li>
+                        <li><a href="chapters/ch06">Chapter 6</a></li>
+                        <li><a href="chapters/ch07">Chapter 7</a></li>
                     </ul>
                 </li>
+                <li class="dropdown-item"><span>Class Exercises</span>
+                    <ul class="dropdown-list">
+                        <li><a href="exercises/week-2-exercise-files/">Week 2</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+            <ul>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h1>HI FRIENDS! It's Art 289 time with Mara Williams!</h1>
-        <p>HTML for fun and profit! It's an introductory paragraph that will be replaced with more meaningful content later.</p>
-
-    </main>
+        <main class="flex-container">
+            <div class="flex-container">
+                <div class="for-sticky">
+                    <a class="stacking-pic-anchor"></a>
+                    <a class="stacking-pic-anchor-2"></a>
+                    <a class="stacking-pic-anchor-3"></a>
+                </div>
+            </div>
+            <section class="for-not-sticky">
+                <h2>Greetings! This is the landing page for Mara Williams' Art 289 Work</h2>
+                <p class>Mara is a student in Computer Programming at LCC. She also like to draw things. Sometimes people pay her to make things.</p>
+                <p class>You can see more of her illustrations at <a href="http://www.maracwilliamsillustrations.com"><em>maracwilliamsillustration.com.</em></a></p>
+                <p>You can see one of the websites she made for Fall 2022 CS295 by going to <a href="https://buttermountain.azurewebsites.net/"><em>Butter Mountain.</em></a> When she has time, she is looking forward to cleaning up the CSS and HTML for that site.</a></p>
+            </section>
+        </main>
+    </div>
+    
+    
     <footer>
-        <small>This is the footer.</small>
+        <small>Mara Williams for Art 289</small>
     </footer>
 </body>
 </html>

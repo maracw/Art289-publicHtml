@@ -1,0 +1,186 @@
+html{
+    background-color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #8da593;
+    font-size: 14px;
+}
+body{
+    position: relative;
+    margin:2em;
+    padding: 2em;;
+}
+a em {
+    font-weight: normal;
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(255, 199, 95);
+    font-size: 7em;
+    margin:0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: .1em;
+    text-shadow: .03em .03em #1f3749, -2px -2px 0 #fff;
+}
+h2{
+    text-align: center;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:visited {
+    background-color: rgb(16, 58, 79);
+    color: lightslategray;
+}
+
+a:hover{
+    background-color:#ffffff;
+    color:  rgb(16, 58, 79);
+    text-decoration: underline;
+}
+
+a:active {
+   font-weight: normal;
+}
+header{
+    margin:0;
+    text-align: center;
+    background-color: lightblue;
+    position: fixed;
+    width: 100%;
+    height: 9.5em;
+    top: 0em;
+    z-index: 1;
+    border-bottom: 2px solid darkgreen;
+}
+nav{
+    width: 20vw;
+    height: 100%;
+    margin-top: 12em;
+    margin-right: 2em;
+    margin-left: 1em;
+    padding: 2em;
+    display: block;
+    position: fixed;
+    top: 9.5em;
+    right: 0%;
+    z-index: 5;
+    background-color: #1f3749;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2em;
+    
+  }
+  
+  li a {
+    display: block;
+    padding: .25em .5em;
+    margin-bottom: .25em;
+    text-decoration: none;
+  }
+  
+nav ul li>span:first-child{
+    font-size: 1.75em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section p {
+    margin-bottom: 5em;;
+    font-size: 1.5em;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+}
+
+/*where the stacking pics will be*/
+.for-sticky{
+    width: 25vw;
+    min-height: 572px;
+    min-width: 400px;
+    background-color: #8da593;
+    padding:1em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+    border-right: 2px solid darkgreen;
+}
+
+.for-not-sticky{
+    width: 35vw;
+    margin-top: 8em;
+    margin-right: 2em;
+    margin-left: 1em;
+    padding:2em;
+}
+
+
+/*images are 572hx400w*/
+
+.stacking-pic-anchor::after{
+    background-image: url(images/tistou/tistou-background-web.png);
+    min-width: 400px;
+    min-height: 572px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    z-index: 3;
+}
+
+.stacking-pic-anchor-2::after{
+    background-image: url(images/tistou/tistou-midground-web.png);
+    min-width: 400px;
+    min-height: 572px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    z-index: 4;
+}
+.stacking-pic-anchor-3::before{
+    background-image: url(images/tistou/tistou-foreground-web.png);
+    min-width: 400px;
+    min-height: 572px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    left: 0;
+    z-index: 5;
+}
+/*blank colored bg png*/
+.stacking-pic-anchor-3::after{
+    background-image: url(images/tistou/tistou-bg.png);
+    min-width: 400px;
+    min-height: 572px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    left: 0;
+    z-index: 2;
+}
