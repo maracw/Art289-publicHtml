@@ -1,0 +1,28 @@
+html{
+    background-color: #0c3143;
+    background-image: url(images/bkg-texture.png);
+    background-position: left top;
+    font-size: 14px;
+}
+body{
+    width: 1068px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000209;
+    background-image: url(images/content-bkg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    border: 6px solid #e1ebf4;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    font-family: 'Exo-2', Arial, Helvetica, sans-serif;
+    color: #e1ebf4;
+}
+header{
+    padding: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+h1, h2{
+    margin:0;
+}
