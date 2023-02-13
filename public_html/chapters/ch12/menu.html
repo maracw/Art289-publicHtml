@@ -7,19 +7,33 @@
 <link href="http://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet"> 
 <style>
     body {
-        font-family: Verdana, sans-serif;
+        font-family: Georgia, serif;
         font-size: 100%;
+        line-height: 1.75em;
     }
     h1 {
-        font-family: "Marko One", Georgia, sans-serif;
-        font-size: 1.5em;
+        font: bold 1.5em "Marko One", Georgia, serif;
+        color: olive;
+        text-shadow: .05em .05em .1em lightgray;
     }
     h2{
         font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        color: olive;
     }
 
+    h2 + p {
+        text-align: center;
+        font-style: italic;
+    }
+
+    h1, h2, #info{
+        text-align: center;
+    }
     dt {
         font-weight: bold;
+        color: sienna;
     }
 
     strong {
@@ -30,12 +44,10 @@
         color: tomato;
     }
 
-    #info {
-        color:teal;
-    }
 
     #info p {
         font-style: italic;
+        color: gray;
     }
 
     .price {
@@ -47,6 +59,11 @@
     .label {
         font-weight: bold;
         font-variant:small-caps;
+        color: red;
+    }
+
+    p.warning, sup {
+        font-size: small;
         color: red;
     }
 </style>
