@@ -6,9 +6,7 @@ html{
 }
 body{
     width: 1068px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     background-color: #000209;
     background-image: url(images/content-bkg.jpg);
     background-position: center top;
@@ -34,9 +32,7 @@ a:active{
 color:#fce17e;
 }
 header{
-    padding: 0;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 80px;
 }
 h1, h2{
     margin:0;
@@ -44,7 +40,8 @@ h1, h2{
 
 header h1 {
     padding-top: 60px;
-    /*font weight*/
+    font-weight: 700;
+    font-style: italic;
     font-size: 3em;
     line-height: 1em;
     color: #fff;
@@ -53,22 +50,23 @@ header h1 {
 
 header h2{
     font-weight: 400;
+    font-style: normal;
     font-size: 1.34em;
     line-height: 1.1em;
     letter-spacing: 0.05em;
     color: #859aaf;
 }
 
-section h1, .was-h1{
-    font-weight: 700;
+section h1{
+    font-weight: 800;
     font-size: 4.8em;
-    text-shadow: 1px 1px 0px #83898f, -1px, -1px 0px #fff;
+    text-shadow: 1px 1px 0px #83898f, -1px -1px 0px #fff;
 }
 section h2{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2em;
     color: #7b99b8;
-    margin-top: 1.5em 0 .2em;
+    margin: 1.5em 0 .2em;
 }
 
 section{
@@ -76,7 +74,7 @@ section{
 
 }
 section p{
-    margin: 0 0 .1em;
+    margin: 0 0 1em;
     line-height: 1.52em;
     max-width: 38em;
 }
@@ -100,6 +98,7 @@ footer{
     padding: 60px 80px 20px;
     border-top: 6px solid #8ba0b5;
     box-shadow: inset 0px 3px 6px rgba(0,0,0,0.5);
+    clear: both;
 }
 footer a{
     text-decoration: dotted;
@@ -121,3 +120,17 @@ footer p{
 }
 
 /*image classes*/
+.content-image{
+    margin:0 0 10px 30px;
+    float: right;
+    width: 300px;
+}
+.content-image img {
+    border: 2px solid #e1ebf4;
+    border-radius: 10px;
+}
+.content-image figcaption{
+    font-weight: 300;
+    font-style: italic;
+    font-size:.8em;
+}
