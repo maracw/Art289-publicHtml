@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Layout Methods Exercise</title>
+	<link rel="stylesheet" type="text/css" href="layout-styles.css">
+</head>
+<body>
+	<header>
+		<h1>CSS Layout Methods Exercise</h1>
+	</header>
+	<section class="intro">
+		<p>This exercise will demonstrate various methods for creating common page layouts with CSS. These methods include use of floats, positioning, flexbox, and grid as possible approaches for arranging a basic set of structural elements into a common layout design. Basic responsive design methods are also included.</p>
+	</section>
+	<aside class="history">
+		<h2>Web Page Layout: A Brief History</h2>
+		<p>Back in the early days of the World Wide Web, brave and tech-savvy graphic designers embarked on a journey into uncharted territory: applying design theory to a new digital medium. These were the days before Cascading Style Sheets, when HTML alone was used to both markup content and stylistically embellish a page's visual presentation.</p>
+		<p>This was also a time before HTML had structural elements such as header, article, section, aside, and footer. In fact, even the generic div element had yet to be concieved. Web designers needed something to contain areas of a page layout, so they took to using HTML tables as layout containers &mdash; and blatantly defied the table element's intended use to serve their own aesthetic purposes.</p>
+		<p>Evolution came and brought us the div and span elements, designed to contain areas of content and be styled with CSS. This simplified the way that design could be applied to web pages while also allowing for a more versatile separation of structure and presentation. CSS properties like float and position were utilized to shape a page's elements into various layout configurations. Still, there was room for improvement as patterns emerged and the need for specific types of containers became apparent. CSS layout methods weren't super smooth either and had some common issues that became apparent as designers sought to reproduce common layouts and innovate creative new solutions to emerging problems brought by changing technology.</p>
+		<p>We now have HTML elements that are specifically intended to contain portions of a page's content and to serve as foundational structure for page layout. We also have CSS capabilities that allow us more control than ever while also smoothing out some long-standing issues and, finally, giving us a full-fledged system for establishing a grid foundation for page layout.</p>
+		<p>Of course, things will continue to evolve for HTML and CSS. Whatever the future will hold, it's bound to be interesting!</p>
+	</aside>
+	<section class="topic-defaults">
+		<h2>Layout Defaults: Naturally Flowing Blocks</h2>
+		<p>Flowing Blocks? Whaaaa? While you may not think of "blocks" as something "natural" or "flowing", in a modern, unstyled HTML page that's exactly what we have as a default. Whether it's simply headings and paragraphs or if the page's content is further defined and organized with header, nav, section, aside, footer and other structural elements, we have by default a set of stacked block elements.</p>
+		<p>These block elements are what we manipulate with CSS in order to give a page its visual appearance and form. By default, the "natural flow" of a page's block elements is a vertical stack of content. Each block has a height that's defined by the content it contains, and a width that expands to the boundaries of the page body.</p>
+	</section>
+	<section class="topic-float">
+		<h2>Layout Basics: Floats</h2>
+		<p>Floats are meant to create text wraps around images or other elements.</p>
+	</section>
+	<section class="topic-position">
+		<h2>Moving Things Around With Position</h2>
+		<p>Sometimes you just gotta move an element into a different spot or change its position in relation to other elements. That's where the position property comes in. There are five possible position values currently available in CSS:</p>
+		<ul>
+			<li>static - the default position. Static positioned elements aren't affected by the top, bottom, left, and right properties. Once an element's position is defined through CSS as something other than static, the element is considered to be "positioned".</li>
+			<li>relative - allows positioning relative to the element's normal position in the document flow. Elements with relative position can be moved using the top, bottom, left, and right properties.</li>
+			<li>absolute - allows positioning using specific coordinates for the top, bottom, left, and right properties that change the position of those respective sides of the element. Coordinates are relative to the element's nearest ancestor that has a position other than static. If no positioned ancestor exists, absolute coordinates are relative to the document body. Absolute-positioned elements are still connected to the document's flow and will scroll with the rest of the page.</li>
+			<li>fixed - allows positioning of an element's top, bottom, left, and right sides relative to the browser viewport. Fixed-position elements are completely removed from the document's flow and do not scroll along with the content of the page.</li>
+			<li>sticky - this type of positioning is like a hybrid of relative and fixed positioning. An element with sticky positioning acts as a relative-positioned element until a particular offset is reached when scrolling the page's content. Once that offset is reached, the element becomes fixed and "sticks" in place.</li>
+		</ul>
+	</section>
+	<section class="topic-flex">
+		<h2>Making Boxes Flexible</h2>
+		<p>Flexbox Layout is a recent addition to CSS and povides methods for easily creating layouts in which the elements can fill the space available in their parent container.</p>
+	</section>
+	<section class="topic-grid">
+		<h2>CSS Grid - Finally A True Foundation For Layout</h2>
+		<p>The Grid. A digital frontier. I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see. And then one day &mdash; oh, wait. Wrong grid, sorry.</p>
+		<p>CSS Grid gives us properties that we can use to establish a grid foundation for page layouts that can be used to easily position elements and reconfigure them in responsive design implementations.</p>
+	</section>
+	<footer>
+		<p>Content written by Thomas Burton (burtont@lanecc.edu). Sources include W3 Schools, CSS-Tricks, Wikipedia, and Tom's own experience as a web designer/developer. No lightcycles were damaged in the production of this document.</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+	border: 2px solid #00a1ff;
+}
+
+header {
+	border: 2px dashed #ff3333;
+}
+
+section {
+	border: 2px solid #77c100;
+	
+}
+
+aside {
+	border: 2px dotted #e8cc00;
+	float:right;
+	background-color: yellow;
+	width: 25%;
+	padding-left: .5em;
+}
+
+footer {
+	border: 2px dashed #985398;
+	clear:both;
+}
+
+h1 {
+	background-color: rgba(255,200,0,.7);
+}
+h2 {
+	background-color: rgba(96, 187, 230, 0.7);
+}
+
+
+/* Experiment with floats */
+
+/* Experiment with positioning */
+
+/* Experiment with flexbox */
+
+/* Experiment with grid */
