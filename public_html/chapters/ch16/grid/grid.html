@@ -21,13 +21,40 @@ body {
 
 /* GRID STYLES START HERE */
 #layout {
+  display: grid;
+  grid-template-rows: 3em 20px [main-start] 150px auto 5em [main-end];
+  /*grid-template-columns: 1fr 20px 150px 20px 150px 20px 150px;*/
+  grid-template-columns: [main-start] 1fr [main-end] repeat(3, 20px 150px);
   margin-left: 5%;
   margin-right: 5%;
 	
 }
+nav {
+  /*set it to one row tall*/
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /*set it to span the full set*/
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+#figC{
+  grid-row: 3/4;
+  grid-column: span 1/-1;
+}
+#figA {
+  grid-area: 3 / 3 / 4 / 4;
+}
+#figB {
+  grid-area: 3 / 5 / 4 / 6;
+}
+main {
+grid-area: main;
+}
 
-
-
+footer {
+  grid-row: 5 / 6;
+  grid-column: 3 / -1;
+}
 /* VISUAL STYLES START HERE */
 
 /* link styles */
