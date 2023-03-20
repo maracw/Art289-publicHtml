@@ -4,14 +4,10 @@
 
 .front-page-name{
     background-image:"";
-    border: 2px solid red;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
-    max-width: 400px;
-    min-width: 200px;
-    width:300px;
-    background-size: 100% auto;
+ 
 }
 .frontpage-branding{
     margin-bottom:3.5em;
