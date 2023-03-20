@@ -165,21 +165,23 @@ section .branding span {
     "main main"
     "footer footer";
   }
-
-  #container2colInner{
-    display: grid;
-    grid-template-rows: auto auto 5em;
-    grid-template-columns: auto, auto 2em; 
-    grid-template-areas: "section1 section2";
-  }
   #container3col{
     display: grid;
     grid-template-rows: auto auto 5em;
-    grid-template-columns: repeat(2,minmax(300px, 1fr)); 
+    grid-template-columns: repeat(3,minmax(300px,600px) ); 
     grid-template-areas: "banner banner banner"
     "section1 section2 section3"
     "footer footer footer";
   }
+
+/*main tag inner grid*/
+  #container2colInner{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto, auto 2em; 
+    grid-template-areas: "section1 section2";
+  }
+
   header {
     grid-area: banner;
   }
@@ -202,6 +204,20 @@ section .branding span {
   footer{
     grid-area: footer;
   }
-  #section1 img, #section2 img{
-    border: 1px solid red;
+ .timeline img{
+    padding-right: 2em;
+    margin-top:4em;
   }
+.about-flex-container div{
+  width:40%;
+  
+}
+
+  .about-flex-container div:first-child{
+    width: 100%;
+    text-align: center;
+  }
+.resume h2{
+    width: 100%;
+    text-align: center;
+}
