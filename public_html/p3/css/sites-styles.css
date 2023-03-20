@@ -1,0 +1,50 @@
+
+
+ /*Front page*/
+
+.front-page-name{
+    background-image:"";
+    border: 2px solid red;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 200px;
+    width:300px;
+    background-size: 100% auto;
+}
+.frontpage-branding{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+}
+.frontpage-branding img{
+    width: 100%;
+    max-width: 25em;
+}
+.short-bio span{
+    display:block;
+    font-size : 60px;
+    line-height : 40.23px;
+    margin-left:.5em;
+    margin-bottom: .33em;
+    padding:0;
+}
+
+.penguin{
+    justify-self: center;
+    align-self: center;
+    width:40%
+}
+.penguin::before {
+    background-image: url(../images/penguin-chart.svg);
+    background-image: url(../images/penguin-chart.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+}
