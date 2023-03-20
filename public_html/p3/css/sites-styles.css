@@ -14,12 +14,19 @@
     background-size: 100% auto;
 }
 .frontpage-branding{
+    margin-bottom:3.5em;
     display: flex;
     flex-direction: column;
     width: 40%;
     justify-self: center;
     align-self: center;
 }
+
+.frontpage-text{
+    font-size: 1.3em;
+    width: 40%;
+}
+
 .frontpage-branding img{
     width: 100%;
     max-width: 25em;
@@ -34,17 +41,20 @@
 }
 
 .penguin{
+    margin-top:6em;
     justify-self: center;
     align-self: center;
-    width:40%
+    width: 40%;
 }
-.penguin::before {
+/* .penguin::before {
     background-image: url(../images/penguin-chart.svg);
     background-image: url(../images/penguin-chart.jpg);
     background-size: cover;
-    height: 400px;
-    width: 400px;
+    /* height: 400px;
+    width: 400px; 
     background-repeat: no-repeat;
     content: "";
     display: block;
-}
+} */
+
+

@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/wax4mji.css");
 body {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "refrigerator-deluxe", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -17,9 +17,7 @@ header{
     padding-right:1em;
     position: relative;
 }
-header div:first-child{
-    
-}
+
 nav{
     margin-left: auto;
     margin-right: 1em;
@@ -80,6 +78,10 @@ nav>a:active {
 main{
     margin: .5em 6em .5em 6em;
 }
+p{
+    margin-left: 1em;
+    padding: 0.5em;
+}
 ul{
     list-style: none;
     display:flex;
@@ -87,7 +89,9 @@ ul{
     justify-content: space-between;
 
 }
-
+img{
+    width:100%;
+}
 footer{
     background-color: rgb(128, 128, 128);
     display:flex;
@@ -156,15 +160,22 @@ section .branding span {
 #container2col{
     display: grid;
     grid-template-rows: auto auto 5em;
-    grid-template-columns: repeat(2,minmax(25em, .5fr)); 
+    grid-template-columns: auto, auto 2em; 
     grid-template-areas: "banner banner"
-    "section1 section2"
+    "main main"
     "footer footer";
+  }
+
+  #container2colInner{
+    display: grid;
+    grid-template-rows: auto auto 5em;
+    grid-template-columns: auto, auto 2em; 
+    grid-template-areas: "section1 section2";
   }
   #container3col{
     display: grid;
     grid-template-rows: auto auto 5em;
-    grid-template-columns: repeat(2,minmax(25em, .5fr)); 
+    grid-template-columns: repeat(2,minmax(300px, 1fr)); 
     grid-template-areas: "banner banner banner"
     "section1 section2 section3"
     "footer footer footer";
@@ -172,12 +183,19 @@ section .branding span {
   header {
     grid-area: banner;
   }
+  main {
+    grid-area: main;
+  }
+  aside {
+    grid-area: aside;
+  }
   #section1 {
     grid-area: section1;
   }
   #section2 {
     grid-area: section2;
   }
+
   #section3 {
     grid-area: section3;
   }
