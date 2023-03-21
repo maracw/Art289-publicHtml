@@ -53,3 +53,89 @@
     display: block;
 } */
 
+.portfolio-card{
+    margin-top: 1em;
+    background-color:#fff;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box shadow values from w3cshools css style images page*/
+    margin:1em;
+    margin-bottom: 2em;;
+    padding:1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.portfolio-card h2{
+    font-size: 200%;
+    text-align: center;
+    border-bottom: .05em rgb(16, 58, 79) solid; 
+}
+
+.portfolio-card .my-button{
+    align-self: flex-end;
+}
+.portfolio-card div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+}
+.portfolio-card img{
+    margin: auto;
+    width: 80%;
+    border:rgb(220, 220, 220) solid 2px;
+}
+
+.portfolio-card ul{
+    margin:0;
+    margin-right: auto;
+    width: 33%;
+}
+.portfolio-card ul li{
+    padding-left:.75em;
+    width:33%;
+   
+}
+
+.cartoon-card{
+    margin-top: 1em;
+    background-color:#fff;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box shadow values from w3cshools css style images page*/
+    margin:1em;
+    margin-bottom: 2em;;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.cartoon-card img{
+    margin:.75em;
+}
+
+
+.cartoon-card div:first-child{
+    padding: 1.5em;
+    width:100%;
+    border-bottom: rgb(0, 0, 0) solid;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-inline-start: 0;
+    padding: 1em 1em .5em 1.5em;
+}
+.cartoon-card div:nth-child(2){
+    width:30%
+}
+.cartoon-card div:nth-child(3){
+    width:60%
+}
