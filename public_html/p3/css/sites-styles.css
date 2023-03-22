@@ -56,8 +56,8 @@
 .portfolio-card{
     margin-top: 1em;
     background-color:#fff;
-    width: 30%;
-    min-width: 200px;
+    width: 27%;
+    min-width: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /*box shadow values from w3cshools css style images page*/
     margin:1em;
@@ -86,7 +86,7 @@
 }
 .portfolio-card img{
     margin: auto;
-    width: 80%;
+    width: 95%;
     border:rgb(220, 220, 220) solid 2px;
 }
 
@@ -94,6 +94,9 @@
     margin:0;
     margin-right: auto;
     width: 33%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: .75em;
 }
 .portfolio-card ul li{
     padding-left:.75em;
