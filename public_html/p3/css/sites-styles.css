@@ -103,7 +103,9 @@
     width:33%;
    
 }
-
+.portfolio-detail-large{
+    width:100%;
+}
 .cartoon-card{
     margin-top: 1em;
     background-color:#fff;
