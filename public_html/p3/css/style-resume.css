@@ -60,6 +60,11 @@ h3, h4 {
 }
 
 /* Flexbox CLASSES */
+.resume-flex-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .job-flex-container{
     justify-content: center;
@@ -67,8 +72,13 @@ h3, h4 {
     margin-right: 1em;
 }
 
-
-
+p{
+    margin:0;
+    padding:0
+}
+p a:link{
+    background-color: #fff;
+}
 dl div{
     margin: .5em 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

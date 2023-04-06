@@ -12,50 +12,76 @@
 </head>
 <body>
     <header>
-        <div class="branding">
-            <span>Mara</span>
-            <span>Williams</span>
+        <div>
+            <a href="index.html" class="branding-imgReplace">Mara Williams</a>
         </div>
         <nav>
                 <a href="portfolio.html">projects</a>
-                <a href="visual-thinking.html">visual thinking</a>
                 <a href="about.html">about</a>
                 <a href="resume.html">resume</a>
                 <a href="contact.html">contact</a>
         </nav>
     </header>
-    <main>
+    <main class="flex-container contact-flex-container">
+        <div>
         <h1>Contact Mara</h1>
-        <div class="fcf-body">
-
+        </div>
+        <div>
+            <img src="images/jpg/penguin-80.jpg" alt="a cartoon drawing of an Adelie penguin wearing a postal carrier uniform. It is holding a letter in its wing.">
+        </div>
+        <div class="fcf-body contact-form-section">
             <div id="fcf-form">
             <h3 class="fcf-h3">Send Me a Message</h3>
-        
+            <hr>
+            <h4>Fields marked with * are required.</h4>
             <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
                 
                 <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
+                    <label for="Name" class="fcf-label">Your name*</label>
                     <div class="fcf-input-group">
                         <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                     </div>
                 </div>
         
                 <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
+                    <label for="Email" class="fcf-label">Your email address*</label>
                     <div class="fcf-input-group">
                         <input type="email" id="Email" name="Email" class="fcf-form-control" required>
                     </div>
                 </div>
-        
                 <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
+                    <label for="phone" class="fcf-label">Your Phone Number</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="phone" name="phone" class="fcf-form-control">
+                    </div>
+                </div>
+                <div class="fcf-input-group my-group">
+                    How much do you like penguins?
+                    <input type="radio" id="1" name="penguin" value=1>
+                    <label for="1">A lot</label><br>
+                    <input type="radio" id="2" name="penguin" value=2>
+                    <label for="2">A HUGE amount</label><br>
+                    <input type="radio" id="3" name="penguin" value=3>
+                    <label for="3">I am an Elephant Seal</label> 
+                </div>
+                <div class="fcf-input-group my-group">
+                    <span>How did you hear about me?</span>
+                    <input type="checkbox" id="refer1" name="refer1" value="google">
+                    <label for="refer1"> Google Search</label><br>
+                    <input type="checkbox" id="refer2" name="refer2" value="person">
+                    <label for="refer2"> I met you in person</label><br>
+                    <input type="checkbox" id="refer3" name="refer3" value="insta">
+                    <label for="refer3"> Instagram</label>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message*</label>
                     <div class="fcf-input-group">
                         <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                     </div>
                 </div>
         
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn">Send Message</button>
+                <div class="fcf-form-group last-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn my-button">Send Message</button>
                 </div>
         
                 <div class="fcf-credit" id="fcf-credit">
@@ -66,23 +92,17 @@
             </div>
         
         </div>
+
     </main>
     <footer>
         <span class="copyright">Copyright Mara Williams 2023</span>
-        
-            <!--to be replaced with icons-->
             <ul>
-                <!--to be replaced with icons-->
                <li>
-                <a href="contact.html" target="_blank"><img src="images/icons/mail-drawn.svg" alt="contact form"></img></a></li>
-               <li><a href="https://www.instagram.com/idrawbears" target="_blank"><img src="images/icons/insta-drawn.svg" alt="instagram"><img></a></li>
-               <li><a href="https://github.com/maracw" target="_blank"><img src="images/icons/github-drawn.svg" alt="github"><img></a></li>
-               <li><a href="" target="_blank"><img src="images/icons/linkedin-drawn.svg"  alt="linkedin"></img></a></li>
-            </ul>
-        
+                <a href="contact.html" target="_blank"><img src="images/icons/mail-drawn.svg" alt="cartoon drawing of envelope"></a></li>
+               <li><a href="https://www.instagram.com/idrawbears" target="_blank"><img src="images/icons/insta-drawn.svg" alt="cartoon drawing of instagram icon"></a></li>
+               <li><a href="https://github.com/maracw" target="_blank"><img src="images/icons/github-drawn.svg" alt="cartoon drawing of github icon"></a></li>
+               <li><a href="https://www.linkedin.com/in/mara-williams-0a11b3114/" target="_blank"><img src="images/icons/linkedin-drawn.svg"  alt="cartoon drawing of linkedin icon"></a></li>
+            </ul>      
     </footer>
-
-    
-    
 </body>
 </html>

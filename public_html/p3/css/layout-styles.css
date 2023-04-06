@@ -10,17 +10,18 @@ body {
 }
 
 header{
+    position:relative;
+    top:0;
+    width:100%;
     display:flex;
     background-color: #000;
     color:#fff;
-    padding-left:1em;
-    padding-right:1em;
-    position: relative;
+    padding:1em;
 }
 
 nav{
     margin-left: auto;
-    margin-right: 1em;
+    margin-right: 2.5em;
     margin-bottom: 1em;
     display: flex;
     align-items: flex-end;
@@ -85,10 +86,42 @@ nav>a:active, .my-button:active {
 /*TODO- add states for the non-nav a tags*/
 main{
     margin: .5em 6em .5em 6em;
+    max-width:1900px;
+}
+h1{
+  font-size:2.5em;
+  margin: .5em 0;
+}
+h1 span{
+  display: block;
+  font-size: .5em;
 }
 p{
     margin-left: 1em;
     padding: 0.5em;
+}
+
+p a:link{
+    color:#000;
+    text-decoration: none;
+    font-weight: bold;
+    background-color:#dddddd;
+}
+p a:visited{
+    color:#606060;
+    font-weight: 400;
+}
+p a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+p a:active{
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+}
+p a:focus{
+    font-style: italic;
 }
 ul{
     list-style: none;
@@ -101,6 +134,7 @@ li{
 }
 img{
     width:100%;
+    height: auto;
 }
 footer{
     background-color: rgb(128, 128, 128);
@@ -118,9 +152,33 @@ footer ul li {
     display: block;
 }
 .flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.flex-container div{
+  width:40%
+}
+.flex-container div:first-child{
+  width: 100%;
+  text-align: center;
+}
+.flex-container ul {
+  list-style: none;
+  display:inline-flex;
+  margin: 0;
+  margin-top:.75em;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+.flex-container p{
+  margin-top:0;
+  padding-top:0;
 }
 .branding{
     padding: 1em;
@@ -136,21 +194,21 @@ footer ul li {
 .branding-imgReplace{
     display:block;
     box-sizing: border-box;
-    min-height: 165px;
-    min-width:250px;
+    min-height: 131px;
+    min-width:240px;
 
     overflow: hidden;
     text-indent:-999px;
-    background-image: url("../images/branding/header-branding.svg");
+    background-image: url("../images/branding/header-branding.png");
     background-size: cover;
     background-repeat: no-repeat;
     
 }
 
 header .branding-imgReplace a{
-    background-image: url("../images/branding/header-branding.svg");
+    background-image: url("../images/branding/header-branding.png");
 }
-
+/*
 section .branding-imgReplace{
     background-image: url("../images/branding/branding-blackOnWhite.svg");
     width: 33%;
@@ -159,70 +217,4 @@ section .branding span {
     font-size : 169px;
     line-height : 127.05px;
 }
-
-/*grid styles*/
-
-#container2col{
-    display: grid;
-    grid-template-rows: auto auto 5em;
-    grid-template-columns: auto, auto 2em; 
-    grid-template-areas: "banner banner"
-    "main main"
-    "footer footer";
-  }
-  #container3col{
-    display: grid;
-    grid-template-rows: auto auto 5em;
-    grid-template-columns: repeat(3,minmax(300px,600px) ); 
-    grid-template-areas: "banner banner banner"
-    "section1 section2 section3"
-    "footer footer footer";
-  }
-
-/*main tag inner grid*/
-  #container2colInner{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto, auto 2em; 
-    grid-template-areas: "section1 section2";
-  }
-
-  header {
-    grid-area: banner;
-  }
-  main {
-    grid-area: main;
-  }
-  aside {
-    grid-area: aside;
-  }
-  #section1 {
-    grid-area: section1;
-  }
-  #section2 {
-    grid-area: section2;
-  }
-
-  #section3 {
-    grid-area: section3;
-  }
-  footer{
-    grid-area: footer;
-  }
- .timeline img{
-    padding-right: 2em;
-    margin-top:4em;
-  }
-.about-flex-container div, .project-flex-container div{
-  width:40%;
-  
-}
-
-  .about-flex-container div:first-child,  .project-flex-container div:first-child{
-    width: 100%;
-    text-align: center;
-  }
-.resume h2{
-    width: 100%;
-    text-align: center;
-}
+*/

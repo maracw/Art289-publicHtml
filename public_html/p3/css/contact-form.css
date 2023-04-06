@@ -19,8 +19,8 @@
     max-width: 100%;
 }
 
-.fcf-form-group {
-    margin-bottom: 1rem;
+.fcf-form-group div{
+    margin: 1rem;
 }
 
 .fcf-input-group {
@@ -111,4 +111,5 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
 }
+
 

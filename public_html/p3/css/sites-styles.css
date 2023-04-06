@@ -1,68 +1,74 @@
 
 
  /*Front page*/
+ .index-flex-container div{
+    margin-left: 4em;
+ }
+.index-flex-container div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    text-align:left;
+    width:40%;
+}
 
-.front-page-name{
-    background-image:"";
+.index-flex-container div h1{
+    margin:0;
+    font-size: 14px;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
- 
-}
-.frontpage-branding{
-    margin-bottom:3.5em;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-self: center;
-    align-self: center;
 }
 
-.frontpage-text{
+.index-flex-container div div{
+    width:100%;
+    margin-left:0;
+    margin-bottom:0;
+}
+.index-flex-container div span{
+    display:block;
+    font-size : 3em;
+    line-height : .8em;
+    margin-left:.5em;
+    margin-bottom: .33em;
+    padding:0;
+}
+
+.index-flex-container div p{
     font-size: 1.3em;
-    width: 40%;
+    margin-top:0;
 }
 
 .frontpage-branding img{
     width: 100%;
+    height:auto;
     max-width: 25em;
-}
-.short-bio span{
-    display:block;
-    font-size : 60px;
-    line-height : 40.23px;
-    margin-left:.5em;
-    margin-bottom: .33em;
-    padding:0;
 }
 
 .penguin{
     margin-top:6em;
     justify-self: center;
     align-self: center;
-    width: 40%;
+
 }
-/* .penguin::before {
-    background-image: url(../images/penguin-chart.svg);
-    background-image: url(../images/penguin-chart.jpg);
-    background-size: cover;
-    /* height: 400px;
-    width: 400px; 
-    background-repeat: no-repeat;
-    content: "";
-    display: block;
-} */
+/*about page*/
+.about-flex-container div:nth-child(3){
+    width:60%;
+}
 
 .portfolio-card{
     margin-top: 1em;
     background-color:#fff;
-    width: 27%;
-    min-width: 400px;
+    min-width: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /*box shadow values from w3cshools css style images page*/
-    margin:1em;
-    margin-bottom: 2em;;
+    margin: .5em 1em .75em 0;
     padding:1em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -78,7 +84,10 @@
     align-self: flex-end;
 }
 .portfolio-card div{
-
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
@@ -87,21 +96,18 @@
 .portfolio-card img{
     margin: auto;
     width: 95%;
+    height: auto;
     border:rgb(220, 220, 220) solid 2px;
 }
 
 .portfolio-card ul{
     margin:0;
-    margin-right: auto;
-    width: 33%;
+    margin-left: auto;
     height: auto;
-    flex-wrap: wrap;
     font-size: .75em;
 }
 .portfolio-card ul li{
-    padding-left:.75em;
-    width:33%;
-   
+    padding-left:.75em;   
 }
 .portfolio-detail-large{
     width:100%;
@@ -143,4 +149,182 @@
 }
 .cartoon-card div:nth-child(3){
     width:60%
+}
+.portfolio-projects-flex-container div{
+width:27%;
+}
+.portfolio-projects-flex-container div div{
+    width:100%;
+    }
+.portfolio-projects-flex-container p{
+    margin:0;
+    padding-bottom: .33em;
+}
+.game-flex-container div:nth-child(2){
+    width:60%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.game-flex-container div:nth-child(3){
+    width:40%;
+
+}
+.game-flex-container img{
+    align-self: center;
+    width:40%;
+    height: auto;
+    margin-right:1em;
+    padding:2em .5em;
+    min-width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.game-flex-container p{
+    margin:0;
+}
+
+.project-flex-container img{
+    align-self: center;
+    margin-right:1em;
+    margin-bottom:2em;
+    padding:2em;
+    min-width: 200px;
+    height:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-flex-container p{
+    margin-left:0;
+}
+.timeline img{
+    padding-right: 2em;
+    margin-top:4em;
+    width:100%;
+    height: auto;
+  }
+
+.upcf-flex-container p{
+    margin-top:0;
+    padding-top:0;
+  }
+.upcf-flex-container div{
+    margin-left:0;
+    justify-content: space-evenly;
+    padding-top:1em;
+  }
+
+.portfolio-detail-flex-container{
+    justify-content: center;
+    margin: .5em 2em;
+}
+.portfolio-detail-flex-container div:nth-child(2)
+{
+    width: 80%;
+}
+
+.upcf-flex-container div:nth-child(2){
+    width: 40%;
+}
+
+.upcf-flex-container div:nth-child(3){
+    width:50%;
+    padding-left:2em;
+  }
+  
+.upcf-flex-container ul{
+    list-style: none;
+    display:inline-flex;
+    margin: 0;
+    margin-left:1em;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+.resume h2{
+    width: 100%;
+    text-align: center;
+}
+
+.upcf-spread{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top:2em;
+    border: 4px black solid;
+    width:100%;
+    justify-content: space-around;
+}
+.upcf-spread img{
+   width: 50%;
+   height: auto; 
+}
+
+.contact-flex-container div:nth-child(2){
+    width:20%;
+    margin-top:4em;
+} 
+.contact-flex-container div:nth-child(3){
+    width:60%;
+    margin-left:4em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+.contact-flex-container h1{
+   text-align: start;
+}
+.contact-flex-container div:nth-child(3) div{
+    box-shadow: none;
+    font-size: 1.3em
+}
+.contact-flex-container h3{
+    font-size:1.5em;
+    margin-bottom: 0;
+}
+.contact-flex-container h4{
+    margin: 0.5em;
+}
+#fcf-form, #fcf-form div{
+    box-shadow: none;
+    margin:.3em;
+    padding-right:.5em;
+    width: 100%;
+ }
+ #fcf-form-id{
+     margin-top:.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.fcf-form-group{
+    display:flex;
+    justify-content: space-between;
+}
+#fcf-form div div{
+    width:60%;
+}
+.fcf-form-group label{
+    width:33%;
+    align-self: end;
+    text-align: left;
+}
+#fcf-form-group-message{
+    flex-direction: column;
+    align-content: center;
+    align-items: normal;
+}
+
+.my-group{
+    font-size: .66em;
+    display:flex;
+    justify-content: space-around;
+}
+#fcf-credit{
+    font-size:initial;
+}
+.last-group button{
+    width:100%;
 }
